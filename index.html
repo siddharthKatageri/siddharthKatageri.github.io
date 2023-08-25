@@ -87,11 +87,11 @@
         }
 
 	    a.disabledlink {
-  /* Make the disabled links grayish*/
-  color: gray;
-  /* And disable the pointer events */
-  pointer-events: none;
-}
+            /* Make the disabled links grayish*/
+            color: gray;
+            /* And disable the pointer events */
+            pointer-events: none;
+        }
 	    
         .paperitem {
             display: flex;
@@ -108,18 +108,18 @@
         }
 	    
 	    .paperitem span.new {
-    margin-left: 7px;
-    padding: 3px 5px;
-    color: white;
-    /* font-weight: 700; */
-    /* font-weight: 900; */
-    text-transform: uppercase;
-    /* letter-spacing: -0.05em; */
-    border-radius: 3px;
-    background-color: #F44336;
-		    align-self: center;
-    font-size: 80%;
-}
+            margin-left: 7px;
+            padding: 3px 5px;
+            color: white;
+            /* font-weight: 700; */
+            /* font-weight: 900; */
+            text-transform: uppercase;
+            /* letter-spacing: -0.05em; */
+            border-radius: 3px;
+            background-color: #F44336;
+                    align-self: center;
+            font-size: 80%;
+        }
 
         .paperitem > div {
             color: #6c757d !important;
@@ -128,7 +128,7 @@
 
         .paperitem > div > b:first-child {
             color: #212529;
-		display: flex;
+            display: flex;
         }
         #navbarNav a {
             font-weight: 600;
@@ -151,149 +151,153 @@
 </head>
 <body class="h-100 d-flex flex-column">
 <header class="bg-light fixed-top">
+
+<!-- Navigation Bar -->
 <nav class="navbar container navbar-expand-sm navbar-light">
 <span style="font-weight: 500; letter-spacing: -0.017em;"><a class="navbar-brand" href="#" style="font-size: 32px;">Siddharth Katageri</a></span>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
+
 <div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav" style="margin-left: auto">
-<li class="nav-item">
-<a class="nav-link" href="#bio">About</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#research">Research</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" href="#contact">Contact</a>
-</li>
-<li class="nav-item">
-    <a class="nav-link" href="files/SiddharthKatageri-CV.pdf" class="text-light">CV</a>
-</li>
-</ul>
+    <ul class="navbar-nav" style="margin-left: auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#bio">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#research">Research</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="files/SiddharthKatageri-CV.pdf" class="text-light">CV</a>
+        </li>
+    </ul>
 </div>
 </nav>
 </header>
+
+<!-- Bio -->
 <main class="container flex-grow-1" style="padding-top:60px">
 <div class="row my-4" id="bio">
-<div class="col-md-auto">
-<!-- <img class="headshot" src="images/purva.jpeg" /> -->
-<img class="headshot2" src="images/sidd.jpeg" />
-</div>
-<div class="col-md mt-4 mt-md-0" style="align-self:center">
-<p>I am a third-year Master's by Research student at <a href="https://www.iiit.ac.in/">IIIT Hyderabad</a>, India associated with Machine Learning Lab (MLL). I am working under the guidance of <a href="https://sites.google.com/site/charusharmacseiith/">Charu Sharma</a>.
-My research interests lie in the areas of 3D Computer Vision and Representation Learning. Particularly, I am interested in building systems that comprehend human motion and interactions in 3D environments. I am also being advised by <a href="https://www.kaihan.org/">Kai Han</a> on developing such systems.
-</p>
-<p>I completed my Bachelor's in Computer Science from <a href="https://www.kletech.ac.in/">KLE Technological University</a> and carried out my research work under the guidance of <a href="https://scholar.google.co.in/citations?user=xBaqwmkAAAAJ&hl=en">Uma Mudenagudi</a>. 
-</p>
-<p>
-    In my free time, I enjoy going for a hike, watching e-sports (Valorant), or eating!
-</p>
-
-</div>
+    <div class="col-md-auto">
+        <!-- <img class="headshot" src="images/purva.jpeg" /> -->
+        <img class="headshot2" src="images/sidd.jpeg" />
+    </div>
+    <div class="col-md mt-4 mt-md-0" style="align-self:center">
+        <p>I am a third-year Master's by Research student at <a href="https://www.iiit.ac.in/">IIIT Hyderabad</a>, India associated with Machine Learning Lab (MLL). I am working under the guidance of <a href="https://sites.google.com/site/charusharmacseiith/">Charu Sharma</a>.
+        My research interests lie in the areas of 3D Computer Vision and Representation Learning. Particularly, I am interested in building systems that comprehend human motion and interactions in 3D environments. I am also being advised by <a href="https://www.kaihan.org/">Kai Han</a> on developing such systems.
+        </p>
+        <p>I completed my Bachelor's in Computer Science from <a href="https://www.kletech.ac.in/">KLE Technological University</a>, and while I was there, I carried out my research work under the guidance of <a href="https://scholar.google.co.in/citations?user=xBaqwmkAAAAJ&hl=en">Uma Mudenagudi</a>. 
+        </p>
+        <p>
+            In my free time, I enjoy going for a hike, watching e-sports (Valorant), or eating!
+        </p>
+    </div>
 </div>
 
 <br>
 
+<!-- Research -->
 <div class="row my-4" id="research">
-<div class="col">
-<h3>Research</h3>
-<div>
-<ul style='list-style-type:none;margin-bottom: 0!important;padding-left: 0!important'>
+    <div class="col">
+        <h3>Research</h3>
+        <div>
+            <ul style='list-style-type:none;margin-bottom: 0!important;padding-left: 0!important'>
 
-<li class="paperitem">
-    <img alt="" src="images/COT_teaser.png" class="publogo float-left rounded g" width="100">
-    <div>
-    <b>Synergizing Contrastive Learning and Optimal Transport for 3D Point Cloud Domain Adaptation</b>
-    <b>Siddharth Katageri</b>*, Arkadipta De*, Chaitanya Devaguptapu*, VSSV Prasad, Charu Sharma, Manohar Kaul<br>
-    <a href="" class="mr-3">arXiv</a>
-    <a href="https://siddharthkatageri.github.io/COT/" class="mr-3">Project Page</a>
-    <a href="" class="mr-3">Video</a>
-    <a href="https://github.com/siddharthKatageri/COT" class="mr-3">Code</a>
-    <br>
-    WACV 2024
+            <li class="paperitem">
+                <img alt="" src="images/COT_teaser.png" class="publogo float-left rounded g" width="100">
+                <div>
+                <b>Synergizing Contrastive Learning and Optimal Transport for 3D Point Cloud Domain Adaptation</b>
+                <b>Siddharth Katageri</b>*, Arkadipta De*, Chaitanya Devaguptapu*, VSSV Prasad, Charu Sharma, Manohar Kaul<br>
+                <a href="" class="mr-3">arXiv</a>
+                <a href="https://siddharthkatageri.github.io/COT/" class="mr-3">Project Page</a>
+                <a href="" class="mr-3">Video</a>
+                <a href="https://github.com/siddharthKatageri/COT" class="mr-3">Code</a>
+                <br>
+                WACV 2024
+                </div>
+            </li>
+
+            <br>
+
+            <li class="paperitem">
+                <img alt="" src="images/abdnet_teaser.jpg" class="publogo float-left rounded g" width="100">
+                <div>
+                <b>ABD-Net: Attention Based Decomposition Network for 3D Point Cloud Decomposition</b>
+                <b>Siddharth Katageri</b>, Shashidhar Kudari, Akshay Gunari, Ramesh Tabib, Uma Mudengudi<br>
+                <a href="https://openaccess.thecvf.com/content/ICCV2021W/StruCo3D/papers/Katageri_ABD-Net_Attention_Based_Decomposition_Network_for_3D_Point_Cloud_Decomposition_ICCVW_2021_paper.pdf" class="mr-3">PDF</a>
+                <a href="https://arxiv.org/abs/2108.04221" class="mr-3">arXiv</a>
+                <a href="https://www.youtube.com/watch?v=19FTFtKCRFs" class="mr-3">Video</a>
+                <br>
+                ICCVW 2021 (<a href="https://struco3d.github.io/iccv2021/" style="color: #6c757d">StruCo3D</a>)
+                </div>
+            </li>
+
+            <br>
+
+            <li class="paperitem">
+                <img alt="" src="images/pointdccnet_teaser.png" class="publogo float-left rounded g" width="100">
+                <div>
+                <b>PointDCCNet: 3D Object Categorization Network using Point Cloud Decomposition</b>
+                <b>Siddharth Katageri</b>, Sameer Kulmi, Ramesh Tabib, Uma Mudengudi<br>
+                <a href="https://openaccess.thecvf.com/content/CVPR2021W/WiCV/papers/Katageri_PointDCCNet_3D_Object_Categorization_Network_Using_Point_Cloud_Decomposition_CVPRW_2021_paper.pdf" class="mr-3">PDF</a>
+                <br>
+                CVPRW 2021 (<a href="https://sites.google.com/view/wicvcvpr2021/home" style="color: #6c757d">WiCV</a>)
+                </div>
+            </li>
+            </ul>
+        </div>
     </div>
-</li>
-
-<br>
-
-<li class="paperitem">
-    <img alt="" src="images/abdnet_teaser.jpg" class="publogo float-left rounded g" width="100">
-    <div>
-    <b>ABD-Net: Attention Based Decomposition Network for 3D Point Cloud Decomposition</b>
-    <b>Siddharth Katageri</b>, Shashidhar Kudari, Akshay Gunari, Ramesh Tabib, Uma Mudengudi<br>
-    <a href="https://openaccess.thecvf.com/content/ICCV2021W/StruCo3D/papers/Katageri_ABD-Net_Attention_Based_Decomposition_Network_for_3D_Point_Cloud_Decomposition_ICCVW_2021_paper.pdf" class="mr-3">PDF</a>
-    <a href="https://arxiv.org/abs/2108.04221" class="mr-3">arXiv</a>
-    <a href="https://www.youtube.com/watch?v=19FTFtKCRFs" class="mr-3">Video</a>
-    <br>
-    ICCVW 2021 (<a href="https://struco3d.github.io/iccv2021/" style="color: #6c757d">StruCo3D</a>)
-    </div>
-</li>
-
-<br>
-
-<li class="paperitem">
-    <img alt="" src="images/pointdccnet_teaser.png" class="publogo float-left rounded g" width="100">
-    <div>
-    <b>PointDCCNet: 3D Object Categorization Network using Point Cloud Decomposition</b>
-    <b>Siddharth Katageri</b>, Sameer Kulmi, Ramesh Tabib, Uma Mudengudi<br>
-    <a href="https://openaccess.thecvf.com/content/CVPR2021W/WiCV/papers/Katageri_PointDCCNet_3D_Object_Categorization_Network_Using_Point_Cloud_Decomposition_CVPRW_2021_paper.pdf" class="mr-3">PDF</a>
-    <br>
-    CVPRW 2021 (<a href="https://sites.google.com/view/wicvcvpr2021/home" style="color: #6c757d">WiCV</a>)
-    </div>
-</li>
-
-
-</ul>
 </div>
-</div>
-</div>
-</div>
+
+<!-- Commented -->
 <!-- <div class="row my-4" id="teaching">
-<div class="col-xl-7">
-<h3>Teaching & Mentorship</h3>
+    <div class="col-xl-7">
+        <h3>Teaching & Mentorship</h3>
 
-<h6 class="text-muted mt-3">Courses</h6>
-<div class="class-listing">
-<span><b>Representation Learning (COMS 6998 - Fall '21, '22)</b><br>
-Teaching Assistant</span><span class="text-muted">Columbia University</span>
-</div>
+        <h6 class="text-muted mt-3">Courses</h6>
+        <div class="class-listing">
+        <span><b>Representation Learning (COMS 6998 - Fall '21, '22)</b><br>
+        Teaching Assistant</span><span class="text-muted">Columbia University</span>
+        </div>
 
-<h6 class="text-muted mt-3">Mentorship</h6>
-<div class="class-listing">
-<span><b>Women in Science (Fall '21, Spring '22)</b><br></span><span class="text-muted">Columbia University</span>
-</div>
-<div class="class-listing">
-<span><b>BEARS Mentorship (Spring '22)</b><br></span><span class="text-muted">Barnard College</span>
-</div>
-<div class="class-listing">
-<span><b>Amazon-SURE Mentorship (Summer '22)</b><br></span><span class="text-muted">Amazon & Colubmia University</span>
+        <h6 class="text-muted mt-3">Mentorship</h6>
+        <div class="class-listing">
+        <span><b>Women in Science (Fall '21, Spring '22)</b><br></span><span class="text-muted">Columbia University</span>
+        </div>
+        <div class="class-listing">
+        <span><b>BEARS Mentorship (Spring '22)</b><br></span><span class="text-muted">Barnard College</span>
+        </div>
+        <div class="class-listing">
+        <span><b>Amazon-SURE Mentorship (Summer '22)</b><br></span><span class="text-muted">Amazon & Colubmia University</span>
+        </div>
+    </div>
 </div> -->
-
-</div>
-</div>
-
 </main>
-<footer class=" bg-secondary text-white">
-<div class=" container py-4" id="contact" style="margin: 0 auto">
-<div class="row">
-<div class="col">
-<h3>CONTACT</h3>
-<span class="text-white-50">Email: </span>siddharth.katageri@research.iiit.ac.in<br>
-<!-- <span class="text-white-50">Office: </span> -->
-<!-- <span style="">Put Office value here!</span> <br /> -->
-<br>
-<font size="-1">This website template was largely inspired by <a href="https://purvaten.github.io/" style="color: white">Purva Tendulkar's</a>.</font>
-</div>
-<div class="col">
-<h3>LINKS</h3>
-<a href="https://scholar.google.com/citations?hl=en&user=_5mWii0AAAAJ" class="text-light">Google Scholar</a><br />
-<a href="https://twitter.com/siddKatageri" class="text-light">Twitter</a> <br />
-<a href="files/SiddharthKatageri-CV.pdf" class="text-light">CV</a> <br />
-<a href="https://github.com/siddharthKatageri" class="text-light">GitHub</a><br />
-<a href="https://www.linkedin.com/in/siddharth-katageri-89528318a/" class="text-light">LinkedIn</a><br />
 
-</div>
+<!-- Footer -->
+<footer class=" bg-secondary text-white">
+    <div class=" container py-4" id="contact" style="margin: 0 auto">
+        <div class="row">
+        <div class="col">
+        <h3>CONTACT</h3>
+        <span class="text-white-50">Email: </span>siddharth.katageri@research.iiit.ac.in<br>
+        <!-- <span class="text-white-50">Office: </span> -->
+        <!-- <span style="">Put Office value here!</span> <br /> -->
+        <br>
+        <font size="-1">This website template was largely inspired by <a href="https://purvaten.github.io/" style="color: white">Purva Tendulkar's</a>.</font>
+    </div>
+    <div class="col">
+        <h3>LINKS</h3>
+        <a href="https://scholar.google.com/citations?hl=en&user=_5mWii0AAAAJ" class="text-light">Google Scholar</a><br />
+        <a href="https://twitter.com/siddKatageri" class="text-light">Twitter</a> <br />
+        <a href="files/SiddharthKatageri-CV.pdf" class="text-light">CV</a> <br />
+        <a href="https://github.com/siddharthKatageri" class="text-light">GitHub</a><br />
+        <a href="https://www.linkedin.com/in/siddharth-katageri-89528318a/" class="text-light">LinkedIn</a><br />
+    </div>
 </footer>
+
 </body>
 </html>
