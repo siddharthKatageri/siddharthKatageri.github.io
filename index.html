@@ -1,384 +1,299 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en" class="h-100">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=800">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-    <style type="text/css">
-        /* Color scheme stolen from Sergey Karayev */
-        a {
-            color:#5B5858;
-            text-decoration: none;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Siddharth's homepage</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+
+<style>
+        @import url('https://rsms.me/inter/inter.css');
+
+        html,
+        * {
+            font-family: 'Inter', sans-serif !important;
+
+            letter-spacing: -0.011em;
+            /* font-family: 'Jost', sans-serif !important; */
+            /* font-size: 18px; */
         }
 
-        a:focus, a:hover {
-            color: #1B8FEC;
-            text-decoration: none;
+         @supports (font-variation-settings: normal) {
+
+             html,
+             * {
+                 font-family: 'Inter var', sans-serif !important;
+             }
+         }
+
+        h4 {
+            font-weight: bold;
+            letter-spacing: -0.019em;
         }
 
-        body, td, th, tr, p {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            font-size: 14px;
-            color: #636060;
+        h3 {
+            font-weight: bold;
+            letter-spacing: -0.019em;
         }
 
-        .hp-photo {
-            width: 240px;
-            height: 300px;
-            /*border-radius: 240px;
-            -webkit-border-radius: 240px;
-            -moz-border-radius: 240px;*/
+        p, ul, header {
+            /* font-size: 1.2rem !important; */
+            /*letter-spacing: 0.01em;*/
         }
 
-        strong {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            font-size: 14px;
+        nav *, h4 {
+            /*letter-spacing: 0.05em;*/
         }
 
-        heading {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            font-size: 28px;
-            color: #b00;
+        .headshot {
+            width: 150px;
+            /* height: 150px; */
+            border-radius: .25rem;
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .headshot2 {
+            width: 180px;
+            /* height: 150px; */
+            border-radius: .5rem;
+            background: rgba(0, 0, 0, 0.1);
+        }
+	    
+	    .placeholder {
+		         margin-right: 1rem !important;
+            width: 111px;
+		    height: 111px;
+            border-radius: 0.25rem;
+            border: none; }
+
+        nav.navbar {
+            margin: 0 auto;
+            /* center */
         }
 
-        papertitle {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            font-size: 15px;
-            font-weight: 700
+        .class-listing {
+            display: flex;
+            justify-content: space-between;
         }
 
-        name {
-            font-family: 'Lato', Verdana, Helvetica, sans-serif;
-            font-size: 38px;
-            color: #b00;
+        .class-listing span {
+            margin: 5px 0;
         }
 
-        nav.main-nav {
-            padding: 10px 10px 0;
-            background: #fff;
-            text-align: right;
+	    a.disabledlink {
+  /* Make the disabled links grayish*/
+  color: gray;
+  /* And disable the pointer events */
+  pointer-events: none;
+}
+	    
+        .paperitem {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem !important;
+            margin-bottom: 1rem !important;
         }
 
-        nav.main-nav a {
-            top: 8px;
-            right: 6px;
-            padding: 8px 12px;
-            color: #b00;
-            font-size: 15px;
-            line-height: 3;
-            border-radius: 3px;
-            border: 1px solid #b00;
+        .paperitem video, .paperitem img {
+            margin-right: 1rem !important;
+            width: 200px;
+            border-radius: 0.25rem;
+            border: 0px solid #6c757d !important;
+        }
+	    
+	    .paperitem span.new {
+    margin-left: 7px;
+    padding: 3px 5px;
+    color: white;
+    /* font-weight: 700; */
+    /* font-weight: 900; */
+    text-transform: uppercase;
+    /* letter-spacing: -0.05em; */
+    border-radius: 3px;
+    background-color: #F44336;
+		    align-self: center;
+    font-size: 80%;
+}
+
+        .paperitem > div {
+            color: #6c757d !important;
+            /*font-size: 1.25em;*/
         }
 
-
-        .topnav {
-          overflow: hidden;
-          background-color: #fff;
+        .paperitem > div > b:first-child {
+            color: #212529;
+		display: flex;
+        }
+        #navbarNav a {
+            font-weight: 600;
+            font-size: 20px;
         }
 
-        .topnav a {
-          float: left;
-          color: #b00;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          font-size: 17px;
-        }
-
-        .topnav a:hover {
-          background-color: #ddd;
-          color: black;
-        }
-
-        .topnav a.active {
-          background-color: #b00;
-          color: white;
-        }
-
-
-
-
-        .one {
-            width: 160px;
-            height: 160px;
-            position: relative;
-        }
-
-        .two {
-            width: 160px;
-            height: 160px;
-            position: absolute;
-            transition: opacity .2s ease-in-out;
-            -moz-transition: opacity .2s ease-in-out;
-            -webkit-transition: opacity .2s ease-in-out;
-        }
-
-        .fade {
-            transition: opacity .2s ease-in-out;
-            -moz-transition: opacity .2s ease-in-out;
-            -webkit-transition: opacity .2s ease-in-out;
-        }
-
-        span.highlight {
-            background-color: #ffffd0;
+        @media (max-width: 800px) {
+            /*p, ul, header {
+                font-size: 1.1rem !important;
+            }*/
+            .class-listing {
+                flex-direction: column;
+                margin-bottom: 10px;
+            }
+            .class-listing span {
+                margin: 0;
+            }
         }
     </style>
-
-    <title>Siddharth Katageri</title>
-    <!--<link rel="stylesheet" type="text/css" href="/imgs/css" >-->
-    <!-- <link rel="icon" type="image/jpg" href="./imgs/oxford_icon.jpg"> -->
 </head>
+<body class="h-100 d-flex flex-column">
+<header class="bg-light fixed-top">
+<nav class="navbar container navbar-expand-sm navbar-light">
+<span style="font-weight: 500; letter-spacing: -0.017em;"><a class="navbar-brand" href="#" style="font-size: 32px;">Siddharth Katageri</a></span>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav" style="margin-left: auto">
+<li class="nav-item">
+<a class="nav-link" href="#bio">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#research">Research</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="files/SiddharthKatageri-CV.pdf" class="text-light">CV</a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<main class="container flex-grow-1" style="padding-top:60px">
+<div class="row my-4" id="bio">
+<div class="col-md-auto">
+<!-- <img class="headshot" src="images/purva.jpeg" /> -->
+<img class="headshot2" src="images/sidd.jpeg" />
+</div>
+<div class="col-md mt-4 mt-md-0" style="align-self:center">
+<p>I am a third-year Master's by Research student at <a href="https://www.iiit.ac.in/">IIIT Hyderabad</a>, India associated with Machine Learning Lab (MLL). I am working under the guidance of <a href="https://sites.google.com/site/charusharmacseiith/">Charu Sharma</a>.
+My research interests lie in the areas of 3D Computer Vision and Representation Learning. Particularly, I am interested in building systems that comprehend human motion and interactions in 3D environments. I am also being advised by <a href="https://www.kaihan.org/">Kai Han</a> on developing such systems.
+</p>
+<p>I completed my Bachelor's in Computer Science from <a href="https://www.kletech.ac.in/">KLE Technological University</a> and carried out my research work under the guidance of <a href="https://scholar.google.co.in/citations?user=xBaqwmkAAAAJ&hl=en">Uma Mudenagudi</a>. 
+</p>
+<p>
+    In my free time, I enjoy going for a hike, watching e-sports (Valorant), or eating!
+</p>
 
-<body>
-<table width="1000" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tbody>
-    <tr>
-        <td>
+</div>
+</div>
 
-            <!--SECTION 1 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
-                <tbody>
-                <tr>
-                    <td>
-                        <!-- <nav class="main-nav">
-                            <a href='/blog/'>Blog</a>
-                        </nav> -->
+<br>
 
-                        <div class="topnav">
-                          <a class="active" href="#home">Home</a>
-                          <a href="/publications.html">Publications</a>
-                          <a href="/SiddharthKatageri-CV.pdf">CV</a>
-                          <!-- <a href="#about">About</a> -->
-                        </div>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+<div class="row my-4" id="research">
+<div class="col">
+<h3>Research</h3>
+<div>
+<ul style='list-style-type:none;margin-bottom: 0!important;padding-left: 0!important'>
 
-            <!--SECTION 2 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="28">
-                <tbody>
-                <tr>
-                    <td>
-                        <!-- <nav class="main-nav">
-                            <a href='/blog/'>Blog</a>
-                        </nav> -->
+<li class="paperitem">
+    <img alt="" src="images/COT_teaser.png" class="publogo float-left rounded g" width="100">
+    <div>
+    <b>Synergizing Contrastive Learning and Optimal Transport for 3D Point Cloud Domain Adaptation</b>
+    <b>Siddharth Katageri</b>*, Arkadipta De*, Chaitanya Devaguptapu*, VSSV Prasad, Charu Sharma, Manohar Kaul<br>
+    <a href="" class="mr-3">arXiv</a>
+    <a href="https://siddharthkatageri.github.io/COT/" class="mr-3">Project Page</a>
+    <a href="" class="mr-3">Video</a>
+    <a href="https://github.com/siddharthKatageri/COT" class="mr-3">Code</a>
+    <br>
+    WACV 2024
+    </div>
+</li>
 
-                        <!-- <nav class="main-nav">
-                            <a href='/blog/'>Contact</a>
-                        </nav> -->
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+<br>
 
-            <!--SECTION 3 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
-                <tbody>
-                <tr>
-                    <td>
-                        <!-- <nav class="main-nav">
-                            <a href='/blog/'>Blog</a>
-                        </nav> -->
+<li class="paperitem">
+    <img alt="" src="images/abdnet_teaser.jpg" class="publogo float-left rounded g" width="100">
+    <div>
+    <b>ABD-Net: Attention Based Decomposition Network for 3D Point Cloud Decomposition</b>
+    <b>Siddharth Katageri</b>, Shashidhar Kudari, Akshay Gunari, Ramesh Tabib, Uma Mudengudi<br>
+    <a href="https://openaccess.thecvf.com/content/ICCV2021W/StruCo3D/papers/Katageri_ABD-Net_Attention_Based_Decomposition_Network_for_3D_Point_Cloud_Decomposition_ICCVW_2021_paper.pdf" class="mr-3">PDF</a>
+    <a href="https://arxiv.org/abs/2108.04221" class="mr-3">arXiv</a>
+    <a href="https://www.youtube.com/watch?v=19FTFtKCRFs" class="mr-3">Video</a>
+    <br>
+    ICCVW 2021 (<a href="https://struco3d.github.io/iccv2021/" style="color: #6c757d">StruCo3D</a>)
+    </div>
+</li>
 
-                        <!-- <nav class="main-nav">
-                            <a href='/blog/'>Contact</a>
-                        </nav> -->
-                        <p align="center" style="font-size:60px; color:#b00; ">
-                            Siddharth Katageri
-                        </p>
-                        <!-- <p align="center" style="font-size:20px; color:#b00 ">
-                            MS Student, IIIT Hyderabad
-                        </p> -->
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+<br>
 
-            <!--SECTION 4 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
-                <tbody>
-                <tr>
-                    <td>
-                        <!-- <nav class="main-nav">
-                            <a href='/blog/'>Blog</a>
-                        </nav> -->
-
-                        <!-- <nav class="main-nav">
-                            <a href='/blog/'>Contact</a>
-                        </nav> -->
-                        <p align="center" style="font-size:20px; color:#54585D">
-                            MS Student, IIIT Hyderabad
-                        </p>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-            <br><br>
-
-
-            <!--SECTION 5 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tbody>
-                <tr>
-                    <td width="68%" valign="middle">
-
-                        <!-- <p align="center", style="color: red">
-                            <name>PAGE UNDER DEVELOPMENT</name>
-                            <br>
-                            <name>cloned from https://qingyonghu.github.io/ </name>
-                        </p> -->
-                        <p align="justify"  style="font-size: 16px"><!-- I am a D.Phil student (Oct 2018 - ) in the <a href="http://www.cs.ox.ac.uk/">
-                            Department of Computer Science</a> at the <a href="http://www.ox.ac.uk/">University of
-                            Oxford</a>, supervised by <a href="https://www.cs.ox.ac.uk/people/niki.trigoni/"> Profs.
-                            Niki Trigoni</a> and <a href="https://www.cs.ox.ac.uk/people/andrew.markham/">Andrew
-                            Markham</a>. Prior to Oxford, I obtained my M.Eng degree and B.Eng degree from China and
-                            supervised by <a href="http://yulanguo.me/">Profs. Yulan Guo</a>. -->
-                            Hello, I am a Master's by Research Student (Aug 2021 - ) at <strong><a style="font-size: 16px" href="https://mll.iiit.ac.in/">MLL</a></strong>, <strong><a style="font-size: 16px" href="https://www.iiit.ac.in/">IIIT Hyderabad</a></strong>, India. I work under the guidance of <strong><a style="font-size: 16px" href="https://sites.google.com/site/charusharmacseiith/home?authuser=0">Dr. Charu Sharma</a></strong>. My research interests lie in the areas of Computer Vision, Geometric Deep Learning and Multimodal Learning.
-                            <br>
-                            <br>
-                            In the past, I've worked as a research intern at Center of Exellence in Visual Intelligence (CEVI), under the advisorship of <strong><a style="font-size: 16px" href="https://scholar.google.co.in/citations?user=xBaqwmkAAAAJ&hl=en">Dr. Uma Mudenagudi</a></strong>. I completed my bachelor's from KLE Technological University, Hubli (Aug 2017 - Aug 2021).
+<li class="paperitem">
+    <img alt="" src="images/pointdccnet_teaser.png" class="publogo float-left rounded g" width="100">
+    <div>
+    <b>PointDCCNet: 3D Object Categorization Network using Point Cloud Decomposition</b>
+    <b>Siddharth Katageri</b>, Sameer Kulmi, Ramesh Tabib, Uma Mudengudi<br>
+    <a href="https://openaccess.thecvf.com/content/CVPR2021W/WiCV/papers/Katageri_PointDCCNet_3D_Object_Categorization_Network_Using_Point_Cloud_Decomposition_CVPRW_2021_paper.pdf" class="mr-3">PDF</a>
+    <br>
+    CVPRW 2021 (<a href="https://sites.google.com/view/wicvcvpr2021/home" style="color: #6c757d">WiCV</a>)
+    </div>
+</li>
 
 
-                            </br>
-                        </p>
-                        <p align="center">
-                            <strong><a href="mailto:siddharth.katageri19@gmail.com" style="font-size: 18px "> Email </a></strong> /
-                            <strong><a href="https://github.com/siddharthKatageri" style="font-size: 18px"> Github </a></strong> /
-                            <!-- <a href="https://www.zhihu.com/people/hu-qing-yong"> Blog </a> / -->
-                            <strong><a href="https://www.linkedin.com/in/siddharth-katageri-89528318a/" style="font-size: 18px"> LinkedIn </a></strong> /
-                            <!-- <a href="https://twitter.com/home"> Twitter </a> / -->
-                            <strong><a href="https://scholar.google.com/citations?hl=en&user=_5mWii0AAAAJ" style="font-size: 18px">Google Scholar</a></strong>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- <div class="row my-4" id="teaching">
+<div class="col-xl-7">
+<h3>Teaching & Mentorship</h3>
 
+<h6 class="text-muted mt-3">Courses</h6>
+<div class="class-listing">
+<span><b>Representation Learning (COMS 6998 - Fall '21, '22)</b><br>
+Teaching Assistant</span><span class="text-muted">Columbia University</span>
+</div>
 
-                        </p>
-                    </td>
-                    <td align="left"><img class="hp-photo" src="./imgs/myphoto_2.jpeg" style="width: 250;"></td>
-                </tr>
-                </tbody>
-            </table>
+<h6 class="text-muted mt-3">Mentorship</h6>
+<div class="class-listing">
+<span><b>Women in Science (Fall '21, Spring '22)</b><br></span><span class="text-muted">Columbia University</span>
+</div>
+<div class="class-listing">
+<span><b>BEARS Mentorship (Spring '22)</b><br></span><span class="text-muted">Barnard College</span>
+</div>
+<div class="class-listing">
+<span><b>Amazon-SURE Mentorship (Summer '22)</b><br></span><span class="text-muted">Amazon & Colubmia University</span>
+</div> -->
 
-            <!--SECTION 2 -->
-            <!-- <table width="90%" align="center" border="1" cellspacing="0" cellpadding="20">
-                <tbody>
-                <tr>
-                    <td>
-                        <heading>Research</heading>
-                        <p align="justify">
-                            My research goal is
-                            to build intelligent systems which are able to achieve an effective and efficient perception
-                            and understanding of 3D scenes. In particular, my research focuses on large-scale point
-                            cloud segmentation, dynamic point cloud processing, point cloud tracking, and local surface
-                            matching. If you are interested in my research or have any use cases that you want to share,
-                            feel free to <a href="mailto:qingyong.hu@cs.ox.ac.uk">contact me</a>!
-                            <span class="highlight"><strong>Internship Position: </strong> If you're interested in ...</span>
-                        </p>
-                    </td>
-                </tr>
-                </tbody>
-            </table> -->
-            <br><br>
-            <!--SECTION 6 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tbody>
-                <tr>
-                    <td>
-                        <heading >News!</heading>
-                        <p style="font-size: 16px"><strong style='color:blueviolet;font-size: 16px'>[10th Aug 2021]</strong> Our paper titled <strong><a href="https://openaccess.thecvf.com/content/ICCV2021W/StruCo3D/html/Katageri_ABD-Net_Attention_Based_Decomposition_Network_for_3D_Point_Cloud_Decomposition_ICCVW_2021_paper.html" style="font-size: 16px">ABD-Net: Attention Based Decomposition Network for 3D Point Cloud</a></strong> is accepted in <strong><a href="https://geometry.stanford.edu/struco3d/papers.html" style="font-size: 16px">ICCV-21 StruCo3D Workshop</a></strong>.
+</div>
+</div>
 
-                        <p style="font-size: 16px"><strong style='color:blueviolet;font-size: 16px'>[31th Jul 2021]</strong> My admission in <strong>IIIT Hyderabad</strong> is approved as MS by Research student in CSE in <strong><a href="https://mll.iiit.ac.in/" style="font-size: 16px">MLL</a></strong>.
+</main>
+<footer class=" bg-secondary text-white">
+<div class=" container py-4" id="contact" style="margin: 0 auto">
+<div class="row">
+<div class="col">
+<h3>CONTACT</h3>
+<span class="text-white-50">Email: </span>siddharth.katageri@research.iiit.ac.in<br>
+<!-- <span class="text-white-50">Office: </span> -->
+<!-- <span style="">Put Office value here!</span> <br /> -->
+<br>
+<font size="-1">This website template was largely inspired by <a href="https://purvaten.github.io/" style="color: white">Purva Tendulkar's</a>.</font>
+</div>
+<div class="col">
+<h3>LINKS</h3>
+<a href="https://scholar.google.com/citations?hl=en&user=_5mWii0AAAAJ" class="text-light">Google Scholar</a><br />
+<a href="https://twitter.com/siddKatageri" class="text-light">Twitter</a> <br />
+<a href="files/SiddharthKatageri-CV.pdf" class="text-light">CV</a> <br />
+<a href="https://github.com/siddharthKatageri" class="text-light">GitHub</a><br />
+<a href="https://www.linkedin.com/in/siddharth-katageri-89528318a/" class="text-light">LinkedIn</a><br />
 
-                        <p style="font-size: 16px"><strong style='color:blueviolet;font-size: 16px'>[19th Jun 2021]</strong> Presented our work <a href="https://openaccess.thecvf.com/content/CVPR2021W/WiCV/html/Katageri_PointDCCNet_3D_Object_Categorization_Network_Using_Point_Cloud_Decomposition_CVPRW_2021_paper.html" style="font-size: 16px">PointDCCNet</a> at WiCV workshop at <strong>CVPR 2021</strong>.
-
-                        <p style="font-size: 16px"><strong style='color:blueviolet;font-size: 16px'>[18th Apr 2021]</strong> Our paper titled <strong><a href="https://openaccess.thecvf.com/content/CVPR2021W/WiCV/html/Katageri_PointDCCNet_3D_Object_Categorization_Network_Using_Point_Cloud_Decomposition_CVPRW_2021_paper.html" style="font-size: 16px">PointDCCNet: 3D Object Categorization Network using Point Cloud Decomposition</a></strong> is accepted in <strong><a href="https://sites.google.com/view/wicvcvpr2021/home?authuser=0" style="font-size: 16px">CVPR-21 WiCV Workshop</a></strong>.
-
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-            <!--SECTION 7 -->
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="80">
-                <tbody>
-                <tr>
-                    <td>
-                        <!-- <nav class="main-nav">
-                            <a href='/blog/'>Blog</a>
-                        </nav> -->
-                       <!--  <p style="color: red;"> ------------------PAGE UNDER DEVELOPMENT, <br>
-                            cloned from https://qingyonghu.github.io/----------------------------------------
-                        </p> -->
-                        <!-- <nav class="main-nav">
-                            <a href='/blog/'>Contact</a>
-                        </nav> -->
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-
-
-            <!--SECTION 8 -->
-            <!-- <table width="100%" align="center" border="1" cellspacing="0" cellpadding="20">
-                <tbody>
-                <tr>
-                    <td>
-                        <heading>Publications / Preprints</heading>
-                    </td>
-                </tr>
-                </tbody>
-            </table> -->
-
-
-            <!--SECTION 9 -->
-            <!-- <table width="100%" align="center" border="1" cellspacing="0" cellpadding="20">
-                <tbody>
-                <tr>
-                    <td width="20%"><img src="./imgs/S3DIS_area2.gif" alt="PontTuset" width="180"
-                                         style="border-style: none"></td>
-                    <td width="80%" valign="top">
-                        <p><a href="https://ieeexplore.ieee.org/document/9440696">
-                            <papertitle>Learning Semantic Segmentation of Large-Scale Point Clouds with Random Sampling
-                            </papertitle>
-                        </a>
-                            <br><strong>Q. Hu</strong>, B. Yang, L. Xie, S. Rosa, Y. Guo, Z. Wang,
-                            N. Trigoni, A. Markham<br>
-                            <em>IEEE Transactions on Pattern Analysis and Machine Intelligence,
-                                2021 </em><strong>(IF=17.73)</strong><br>
-                            <a href="https://ieeexplore.ieee.org/document/9440696">Paper</a> /
-                            <a href="https://youtu.be/Ar3eY_lwzMk">Demo</a> /
-                            <a href="https://github.com/QingyongHu/RandLA-Net"><font
-                                    color="red">Code</font></a>
-                            <iframe src="https://ghbtns.com/github-btn.html?user=QingyongHu&repo=RandLA-Net&type=star&count=true&size=small"
-                                    frameborder="0" scrolling="0" width="120px"
-                                    height="20px"></iframe>
-                        <p align="justify" style="font-size:13px">This is a journal version of the RandLA-Net, with more
-                            extensive experiments on the Toronto3D, NPM3D, ScanNet and DALES. We provide more details
-                            regarding the entire architecture and the implementation of our RandLA-Net, including all
-                            specifics of encoding/decoding neural layers and particulars of the training strategy.</p>
-                        <p></p>
-                    </td>
-                </tr>
-            </table> -->
-
-
-
-
-            <!--SECTION 9 -->
-            <!-- <div style="clear:both;">
-                <p align="right"><font size="2">
-                    <script type="text/javascript" id="clustrmaps"
-                            src="//cdn.clustrmaps.com/map_v2.js?d=liidPLPwwYqJmgAk1lXn75bsZTzJiDg-yWRt9b6CKwc&cl=ffffff&w=a"></script>
-                </font></p>
-                <br/>
-            </div> -->
-
-
-        </td>
-    </tr>
-    </tbody>
-</table>
+</div>
+</footer>
 </body>
 </html>
